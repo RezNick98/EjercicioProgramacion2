@@ -1,0 +1,4 @@
+import java.utils.arraylist;
+public class Jerarquico extends Empleado{
+    private ArrayList<Empleado> empleados;
+}
