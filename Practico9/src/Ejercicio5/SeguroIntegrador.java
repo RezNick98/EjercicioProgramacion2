@@ -13,7 +13,7 @@ public class SeguroIntegrador extends ElementoPoliza{
     }
 
     @Override
-    public int getMonto() {
+    public double getMonto() {
         int sumaTotal=0;
         for (ElementoPoliza elementos : this.seguros) {
             sumaTotal+=elementos.getMonto();
