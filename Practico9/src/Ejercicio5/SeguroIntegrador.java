@@ -22,7 +22,19 @@ public class SeguroIntegrador extends ElementoPoliza{
     }
     @Override
     public int getNumeroPoliza(){
-        return 0;
+        int numeroPolizaAux=0;
+        int numeroPolizaMax=0;
+        int i=0;
+        while(i<seguros.size()){
+            numeroPolizaAux=seguros.get(i).getNumeroPoliza();
+            if(numeroPolizaMax<numeroPolizaAux){
+                numeroPolizaMax=numeroPolizaAux;
+                i++;
+            }else{
+                i++;
+            }
+        }
+        return numeroPolizaMax;
     }
     
 }
